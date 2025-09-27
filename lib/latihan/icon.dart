@@ -92,7 +92,7 @@ class BelajarIcon extends StatelessWidget {
                 ),
                 Row(
                     children: [
-                      Icon(Icons.alarm),
+                      Icon(Icons.alarm, color: const Color(0xffFF00FF),),
                        Text("60 min", style: TextStyle(
                   color: const Color(0xffFF69B4), 
                   fontSize: 10,
@@ -105,14 +105,49 @@ class BelajarIcon extends StatelessWidget {
                   width: 40,
                   height: 40,
                   decoration: BoxDecoration(
-                    
+                    borderRadius: BorderRadius.circular(100),
+                    color: Colors.white
                   ),
+                  child: Icon(Icons.play_arrow, size: 30, color: const Color(0xffFF00FF),),
                 )
                     ],
                 )
                   ],
                 ),
 
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Stack(
+            children: [
+              Image.asset('images/06.jpg', width: 400,),
+              Row(
+                children: [
+                  Image.asset('images/03.png'),
+                  Column(
+                    children: [
+                      SizedBox(height: 30,),
+                       Text("You're doing great", style: TextStyle(
+                  color:  const Color(0xffFF00FF), 
+                  fontSize: 10,
+                ),
+                ),
+                Text("keep it up", style: TextStyle(
+                  color:  const Color(0xffFF00FF), 
+                  fontSize: 5,
+                ),
+                ),
+                Text("Stick to your plan", style: TextStyle(
+                  color:  const Color(0xffFF00FF), 
+                  fontSize: 5,
+                ),
+                ),
+                    ],
+                  )
+                ],
+              )
+            ],
           )
 
             ],

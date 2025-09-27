@@ -35,8 +35,9 @@ class BelajarIcon extends StatelessWidget {
                 fontSize: 20,
               ),),
               SizedBox(
-                width: 70,
+                width: 220,
               ),
+              Icon(Icons.calendar_month),
                 ],
               ),
                 SizedBox(
@@ -49,10 +50,10 @@ class BelajarIcon extends StatelessWidget {
                 fontSize: 20,
               ),),
                SizedBox(
-                width: 70,
+                width: 200,
               ),
               Text("Detail", style: TextStyle(
-                color: const Color(0xffFF69B4), 
+                color: const Color(0xffFF00FF), 
                 fontSize: 20,
               ),),
              
@@ -108,11 +109,11 @@ class BelajarIcon extends StatelessWidget {
                 ),
                 ),
                 SizedBox(
-                  width: 70,
+                  width: 200,
                 ),
                 Container(
-                  width: 40,
-                  height: 40,
+                  width: 50,
+                  height: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     color: Colors.white
@@ -172,7 +173,7 @@ class BelajarIcon extends StatelessWidget {
                 children: [
                    Container(
                   width: 150,
-                  height: 110,
+                  height: 100,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                      boxShadow: [
@@ -197,7 +198,7 @@ class BelajarIcon extends StatelessWidget {
                 children: [
                    Container(
                   width: 150,
-                  height: 110,
+                  height: 100,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [

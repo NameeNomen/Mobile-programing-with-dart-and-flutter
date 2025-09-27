@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_programing/tugas/tugas2.dart';
+import 'package:mobile_programing/latihan/icon.dart';
+//import 'package:mobile_programing/tugas/tugas2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Tugas2(),
+      home: BelajarIcon(),
     );
   }
   }

@@ -10,8 +10,8 @@ class BelajarIcon extends StatelessWidget {
       Center(
         child: Container(
           padding: EdgeInsets.all(40),
-          width: 700,
-          height: 1000,
+          width: 500,
+          height: 1100,
           decoration: BoxDecoration(
             color:const Color(0xffe1bee7),
             borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -34,6 +34,9 @@ class BelajarIcon extends StatelessWidget {
                 color: const Color(0xffFF69B4),
                 fontSize: 20,
               ),),
+              SizedBox(
+                width: 70,
+              ),
                 ],
               ),
                 SizedBox(
@@ -45,10 +48,16 @@ class BelajarIcon extends StatelessWidget {
                 color: const Color(0xffFF69B4), 
                 fontSize: 20,
               ),),
+               SizedBox(
+                width: 70,
+              ),
               Text("Detail", style: TextStyle(
                 color: const Color(0xffFF69B4), 
                 fontSize: 20,
               ),),
+             
+              
+
             ],
             ),
           Container(
@@ -134,12 +143,12 @@ class BelajarIcon extends StatelessWidget {
                 ),
                 ),
                 Text("keep it up", style: TextStyle(
-                  color:  const Color(0xffFF00FF), 
+                  color:  const Color(0xffFF69B4), 
                   fontSize: 10,
                 ),
                 ),
                 Text("Stick to your plan", style: TextStyle(
-                  color:  const Color(0xffFF00FF), 
+                  color:  const Color(0xffFF69B4), 
                   fontSize: 10,
                 ),
                 ),
@@ -149,51 +158,64 @@ class BelajarIcon extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
-            width: 20,
-            height: 20,
-          ),
-          Row(
-            
-            children: [
-          Stack(
-            children: [
-              Row(
+         SizedBox(
+                  height: 10,
+                ),
+                Text("Area of focus", style: TextStyle(
+                  color: const Color(0xffFF00FF), 
+                  fontSize: 20,
+                ),),
+                Row(
+                  
                 children: [
-              Container(
-                width: 100,
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.white
+               Stack(
+                children: [
+                   Container(
+                  width: 150,
+                  height: 110,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                     boxShadow: [
+                      BoxShadow(
+                        spreadRadius: 2,
+                        blurRadius: 2,
+                        offset: Offset(2, 2),
+                        color: const Color.fromARGB(255, 241, 170, 250),
+                      )
+                    ],
+                    color: Colors.white
+                  ),
                 ),
+               Positioned(right: 10,bottom:5, child: Image.asset('images/05.png'),) 
+                ],
                 
-              ),
-              
-              Image.asset('images/05.png')
-                ]
-              ),
-            ],
-          ),
-          
-          Stack(
-            children: [
-              Container(
-                width: 100,
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color:  Colors.white
+               ),
+               SizedBox(
+                width: 60,
+               ),
+               Stack(
+                children: [
+                   Container(
+                  width: 150,
+                  height: 110,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        spreadRadius: 2,
+                        blurRadius: 2,
+                        offset: Offset(2, 2),
+                        color: const Color.fromARGB(255, 241, 170, 250),
+                      )
+                    ],
+                    color: Colors.white
+                  ),
                 ),
-              ),
-              SizedBox(
-                width: 10,
-              ),
-                Image.asset('images/04.png'),
-            ],
-          )
-            ]
-          ),
+               Positioned(right: 10, bottom: 5,child: Image.asset('images/04.png'),) 
+                ],
+               ),
+                ],
+                )
             ],
         ),
       ),

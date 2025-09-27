@@ -9,9 +9,9 @@ class BelajarIcon extends StatelessWidget {
       body: 
       Center(
         child: Container(
-          padding: EdgeInsets.all(20),
-          width: 500,
-          height: 800,
+          padding: EdgeInsets.all(40),
+          width: 700,
+          height: 1000,
           decoration: BoxDecoration(
             color:const Color(0xffe1bee7),
             borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -54,7 +54,7 @@ class BelajarIcon extends StatelessWidget {
           Container(
                 padding: EdgeInsets.all(20),
                 width: 400,
-                height: 210,
+                height: 200,
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
                     colors: [Color(0xffffe4ec), Color(0xffe1bee7)], // pink muda → ungu muda
@@ -149,40 +149,51 @@ class BelajarIcon extends StatelessWidget {
               )
             ],
           ),
+          SizedBox(
+            width: 20,
+            height: 20,
+          ),
+          Row(
+            
+            children: [
           Stack(
             children: [
               Row(
                 children: [
-
-             
               Container(
-                width: 200,
-                height: 200,
+                width: 100,
+                height: 100,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.white
                 ),
                 
               ),
-              SizedBox(
-                width: 10,
-              ),
-              Image.asset('images/05/png')
+              
+              Image.asset('images/05.png')
                 ]
               ),
             ],
           ),
+          
           Stack(
             children: [
               Container(
-                width: 200,
-                height: 200,
+                width: 100,
+                height: 100,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(20),
+                  color:  Colors.white
                 ),
-              )
+              ),
+              SizedBox(
+                width: 10,
+              ),
+                Image.asset('images/04.png'),
             ],
           )
+            ]
+          ),
             ],
         ),
       ),

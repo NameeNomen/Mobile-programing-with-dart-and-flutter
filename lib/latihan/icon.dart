@@ -99,7 +99,7 @@ class BelajarIcon extends StatelessWidget {
                 ),
                 ),
                 SizedBox(
-                  width: 40,
+                  width: 70,
                 ),
                 Container(
                   width: 40,
@@ -116,31 +116,31 @@ class BelajarIcon extends StatelessWidget {
                 ),
 
           ),
-          SizedBox(
-            height: 20,
-          ),
           Stack(
             children: [
-              Image.asset('images/06.jpg', width: 400,),
+             Positioned(top: 50, child: Image.asset('images/06.jpg', width: 400,),),
               Row(
                 children: [
                   Image.asset('images/03.png'),
+                  SizedBox(
+                    width: 30,
+                  ),
                   Column(
                     children: [
                       SizedBox(height: 30,),
                        Text("You're doing great", style: TextStyle(
                   color:  const Color(0xffFF00FF), 
-                  fontSize: 10,
+                  fontSize: 15,
                 ),
                 ),
                 Text("keep it up", style: TextStyle(
                   color:  const Color(0xffFF00FF), 
-                  fontSize: 5,
+                  fontSize: 10,
                 ),
                 ),
                 Text("Stick to your plan", style: TextStyle(
                   color:  const Color(0xffFF00FF), 
-                  fontSize: 5,
+                  fontSize: 10,
                 ),
                 ),
                     ],
@@ -148,8 +148,41 @@ class BelajarIcon extends StatelessWidget {
                 ],
               )
             ],
-          )
+          ),
+          Stack(
+            children: [
+              Row(
+                children: [
 
+             
+              Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white
+                ),
+                
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Image.asset('images/05/png')
+                ]
+              ),
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20)
+                ),
+              )
+            ],
+          )
             ],
         ),
       ),
